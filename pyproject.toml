@@ -1,0 +1,17 @@
+[project]
+name = "Reflecto_AI_backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "reflecto",
+]
+
+[tool.uv.sources]
+reflecto = { git = "https://github.com/SJB7777/Reflecto" }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.6",
+]
