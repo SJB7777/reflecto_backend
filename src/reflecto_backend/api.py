@@ -7,7 +7,7 @@ from reflecto.simulate.simul_genx import ParamSet
 
 from .core.inference import XRRInferenceEngine
 
-WEIGHTS_DIR = Path(r"data/models")
+WEIGHTS_DIR = Path(__file__) / "../../data/models"
 
 def ai_guess(tths: np.ndarray, refl: np.ndarray, wavelen:float = 1.54) -> tuple[list[ParamSet], ParamSet]:
 
